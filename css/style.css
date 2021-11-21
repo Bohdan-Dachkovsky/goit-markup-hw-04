@@ -3,6 +3,7 @@
   --primery-item-color: #757575;
   --internal-light-dark: #ffffff;
   --permanent-color: rgba(255, 255, 255, 0.6);
+  --bg-master-color:#E5E5E5;
 }
 
 ul {
@@ -69,15 +70,33 @@ color: #2196F3;
 .site-nav .link:hover,
 .site-nav .link:active {
   color: #2196f3;
+   transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 .site-nav .link:focus {
   color: #080545;
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  animation-delay: 1000ms;
 }
 .list .list-tel:hover {
 color: #2196F3;
+  color: #080545;
+  transition-property: background-color;
+  transition-duration: 500ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 .list .e-mail:hover {
 color: #2196F3;  
+  color: #080545;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 
 /* Дополнительная навигация */
@@ -337,8 +356,9 @@ font-style: normal;
 
 
  .section {
- 
-  margin-top: 94px;
+  background-color: var( --bg-master-color);
+  padding-top: 100px;
+  padding-bottom: 94px;
  
  }
  img {
@@ -569,10 +589,17 @@ color: #ffffff;
 }
 
 .list-employee a:hover {
-  
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
    background-color: #2196f3;
 }
 .bottom-list-icon a:hover {
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
    background-color: #2196f3;
 }
 
@@ -817,20 +844,35 @@ footer {
 .title .title-1:focus,
 .title .title-1:hover,
 .title .title-1:active {
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
   color: #2196f3;
 }
 .item .e-mail:hover,
 .item .e-mail:focus {
   color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 .item .tel:hover,
 .item .tel:focus {
   color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 /* Main content */
 .btn-option::selection {
  color:#212121; 
-
+  transition-property: background-color;
+  transition-duration: 250ms ;
+  transition-timing-function: linear;
+  animation-delay: 1000ms;
 }
 
 .titles .btn-option {
@@ -842,7 +884,7 @@ footer {
   letter-spacing: 0.03em;
   color:#212121;
   background-color: #F5F4FA;
-  border-color:#F5F4FA ;
+  border: transparent;
 }
 *{outline: 0 !important;}
 .titles .btn-option::-moz-focus-inner,
@@ -853,9 +895,14 @@ footer {
 .titles .btn-option:focus {
 background-color: #2196F3;
 color: #ffffff;
+ transition-property: background-color;
+ transition-duration: 250ms ;
+ transition-timing-function: linear;
+ animation-delay: 1000ms;
 }
 
-/* background div) */
+
+
 .titles .btn {
   font-family: Roboto;
   font-weight: 500;
@@ -889,12 +936,10 @@ color: #ffffff;
   color: #757575;
 }
 /* End main content and footer starting */
-.basement {
-  background-color: var(--background-color);
-}
+
 .footer-box {
   width: auto;
-  margin-top: 94px;
+ 
   background-color: #2F303A;
 }
 .logotype .web-link {
@@ -1010,32 +1055,51 @@ padding-bottom: 50px;
 border-radius: 0px;
 width: 73px;
 height: 38px;
-padding-left: 8px;
+padding: 1px;
+padding-left: 7px;
 vertical-align: middle;
 margin-right: 8px;
+border: transparent;
+border-radius: 4px;
+text-align: center;
 }
 .btn-option-size-second {
 width: 128px;
 height: 38px;
-padding-left: 8px;
+padding: 1px;
+padding-left: 7px;
 margin-right: 8px;
+border: transparent;
+border-radius: 4px;
+text-align: center;
 }
 .btn-option-size-third {
 width: 145px;
 height: 38px;
-padding-left: 8px;
+padding: 1px;
+padding-left: 7px;
 margin-right: 8px;
+border: transparent;
+border-radius: 4px;
+text-align: center;
 }
 .btn-option-size-fourth {
 width: 130px;
 height: 38px;
-padding-left: 8px;
+padding: 1px;
+padding-left: 7px;
 margin-right: 8px;
+border: transparent;
+border-radius: 4px;
 }
 .btn-option-size-fifth {
 width: 103px;
 height: 38px;
-padding-left: 8px;
+padding: 1px;
+padding-left: 7px;
+border: transparent;
+border-radius: 4px;
+text-align: center;
 }
 
 .list-of-file {
