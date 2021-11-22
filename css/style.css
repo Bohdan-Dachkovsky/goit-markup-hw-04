@@ -14,13 +14,16 @@ ul {
 a {
   text-decoration: none;
 }
+font-family: Raleway, sans-serif;
+font-family: Roboto, sans-serif;
+
 /* Шрифт для логотипа */
 .logo .bluecolor {
 color: #2196F3;
 }
 .logo {
   color: black;
-  font-family: Raleway, sans-serif;
+ 
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -34,7 +37,6 @@ color: #2196F3;
 }
 /* Шрифт навигации */
 .site-nav .item-1 > a {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -47,7 +49,6 @@ color: #2196F3;
 }
 /* Шрифт навигации */
 .site-nav a {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,7 +70,7 @@ color: #2196F3;
 }
 .site-nav .link:hover,
 .site-nav .link:active {
-  color: #2196f3;
+  color: #2196f3;   
    transition-property: background-color;
   transition-duration: 250ms ;
   transition-timing-function: linear;
@@ -101,7 +102,6 @@ color: #2196F3;
 
 /* Дополнительная навигация */
 .e-mail {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -121,7 +121,6 @@ h3 {
 }
 /* Дополнительная навигация */
 .tittle {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -130,7 +129,6 @@ h3 {
   color: var(--basic-bg-color);
 }
 .list .list-tel {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -139,7 +137,6 @@ h3 {
   letter-spacing: 0.02em;
 }
  .list .e-mail {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -168,7 +165,6 @@ h3, h4 {
   letter-spacing: 0.03em;
 }
 h4 {
-font-family: Roboto, sans-serif;  
 font-size: 36px;
 font-weight: 700;
 text-align: center;
@@ -193,7 +189,6 @@ font-style: normal;
 /* Header-1 */
 .wrapper .first-unit {
   word-wrap: break-word;
-  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
   text-transform: uppercase;
@@ -216,7 +211,6 @@ font-style: normal;
   color: #ffffff;
   background-color: var(--basic-bg-color);
   list-style: none;
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -227,14 +221,12 @@ font-style: normal;
 
 /* "List" */
 .activity-list .items p {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   padding-right: 30px;
 }
 .activity-list .items h3 {
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
@@ -248,14 +240,12 @@ font-style: normal;
   color: var(--primery-item-color);
 }
 .section .subtitle-1 {
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: #212121;
 }
 .section .subtitle-2 {
-  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -271,7 +261,6 @@ font-style: normal;
   margin-top: 30px;
 }
 .section .desc {
-  font-family:Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -295,7 +284,7 @@ font-style: normal;
 }
 /* Шрифт к футтеру logo*/
 .logotype .site-link {
-  font-family: Raleway, sans-serif;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.93;
@@ -305,7 +294,7 @@ font-style: normal;
   padding-top: 20px;
 }
 .basement .centering {
-  font-family: Raleway, sans-serif;
+ 
   font-weight: 700;
   font-size: 26px;
   line-height: 1.93;
@@ -314,7 +303,6 @@ font-style: normal;
 }
 /* Значение в адресе */
 .contact-details {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -322,7 +310,6 @@ font-style: normal;
   padding-top: 20px;
 }
 .info .link-mail {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -332,7 +319,6 @@ font-style: normal;
   font-style: normal;
 }
 .basement .info .title-link {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -580,7 +566,6 @@ margin-right: 10px;
 } 
 .container p {
 font-style: normal;
-font-family: Roboto, sans-serif;
 font-weight: 700; 
 font-size: 14px;
 line-height: 1.17;
@@ -789,7 +774,7 @@ footer {
 }
 /* Site header begins */
 .logo {
-  font-family: Raleway;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -800,7 +785,6 @@ footer {
 }
 /* Pages color */
 .title .title-1 {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -811,15 +795,12 @@ footer {
   color: #2196f3;
 }
 .sub-nav .title .title-2 {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color:  #2196f3;
 }
 .item a {
-  font-family: Roboto;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -876,7 +857,6 @@ footer {
 }
 
 .titles .btn-option {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 62;
@@ -904,7 +884,6 @@ color: #ffffff;
 
 
 .titles .btn {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1,62;
@@ -917,7 +896,6 @@ color: #ffffff;
 }
 /* Projects commyuity */
 .feature .paper {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -928,7 +906,6 @@ color: #ffffff;
   padding-top: 20px;
 }
 .section .feature p {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -949,7 +926,6 @@ color: #ffffff;
   color: #212121;
 }
 .basement .logotype {
-  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -961,14 +937,12 @@ color: #ffffff;
   color: #2196f3;
 }
 .info .contact-details {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
 }
 .info .link-mail {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -977,7 +951,6 @@ color: #ffffff;
   color: rgba(255, 255, 255, 0.6);
 }
 .info .web-link {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
