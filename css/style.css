@@ -4,6 +4,8 @@
   --internal-light-dark: #ffffff;
   --permanent-color: rgba(255, 255, 255, 0.6);
   --bg-master-color:#E5E5E5;
+  --bg-footer-color: rgba(47, 48, 58, 1);
+  --another-section-color: rgba(245, 244, 250, 1);
 }
 
 ul {
@@ -11,12 +13,50 @@ ul {
   margin: 0;
   padding: 0;
 }
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
 a {
   text-decoration: none;
 }
+.page-for-logo{
 font-family: Raleway, sans-serif;
+}
+.nav-container .bluecolor {
+font-family: Raleway, sans-serif;  
+}
+.nav-container .site-nav a {
 font-family: Roboto, sans-serif;
-
+}
+.second-site-unit  a {
+font-family: Roboto, sans-serif;  
+}
+h1, h2, h3, p {
+font-family: Roboto, sans-serif;  
+}
+button {
+font-family: Roboto, sans-serif;    
+}
+.contact > a {
+font-family: Raleway, sans-serif; 
+}
+h4 {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.icon-client h4 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 /* Шрифт для логотипа */
 .logo .bluecolor {
 color: #2196F3;
@@ -91,6 +131,16 @@ color: #2196F3;
   transition-timing-function: linear;
   animation-delay: 1000ms;
 }
+.first-site-unit {
+   ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+}
+
 .list .e-mail:hover {
 color: #2196F3;  
   color: #080545;
@@ -98,6 +148,7 @@ color: #2196F3;
   transition-duration: 500ms;
   transition-timing-function: linear;
   animation-delay: 1000ms;
+   
 }
 
 /* Дополнительная навигация */
@@ -220,11 +271,14 @@ font-style: normal;
 }
 
 /* "List" */
+.items {
+  margin-right: 30px;
+}
 .activity-list .items p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  padding-right: 30px;
+
 }
 .activity-list .items h3 {
   font-weight: 700;
@@ -234,7 +288,7 @@ font-style: normal;
   text-transform: uppercase;
   color: #212121;
   text-align: left;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .section .activity-list .item-1 {
   color: var(--primery-item-color);
@@ -299,7 +353,7 @@ font-style: normal;
   font-size: 26px;
   line-height: 1.93;
   color: white;
-  padding-top: 9px;
+ 
 }
 /* Значение в адресе */
 .contact-details {
@@ -307,7 +361,7 @@ font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
-  padding-top: 20px;
+
 }
 .info .link-mail {
   font-weight: 400;
@@ -317,6 +371,7 @@ font-style: normal;
 }
 .basement .info .no-italic {
   font-style: normal;
+  margin:0;
 }
 .basement .info .title-link {
   font-weight: 400;
@@ -332,20 +387,18 @@ font-style: normal;
 *::after {
   box-sizing: inherit;
   }
-  .customers-of-companies {
+
+ 
+.icon-client {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  }
-
+}
 
  .section {
-  background-color: var( --bg-master-color);
-  padding-top: 100px;
-  padding-bottom: 94px;
- 
+  margin-top: 100px; 
  }
  img {
   display: block;
@@ -359,8 +412,8 @@ font-style: normal;
   margin-left: auto;
   margin-right: auto;
 }
-
-
+.our-community {
+background-color: var(--another-section-color);
 }
 .bussines-box {
  background-color: #F5F4FA;
@@ -382,6 +435,8 @@ font-style: normal;
   justify-content: flex-end;
   align-items: baseline;
   text-align: center;
+  width: 530px;
+  
 }
 .nav-container  {
   display: flex;
@@ -409,14 +464,13 @@ font-style: normal;
  padding-bottom: 32px;
 }
 .second-site-unit .contact {
- padding-left: 159px;
  padding-right: 50px;
  padding-top: 32px;
  vertical-align: middle;
 }
 .second-site-unit > .contact-1 {
  padding-top: 32px;
- padding-left: auto; 
+
  vertical-align: middle;
 }
 
@@ -561,7 +615,6 @@ margin-right: 10px;
 }
 /* Footer */
 .basement {
-  width: 1200px;
   display: flex;
 } 
 .container p {
@@ -594,6 +647,7 @@ color: #ffffff;
   text-align: start;
   justify-content: start;
   justify-items: baseline;
+   
 }
 .below-icons {
   width: 20px;
@@ -665,6 +719,7 @@ padding-bottom: 50px;
 }
 .subtitle-2{
   text-align: center;
+  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -983,6 +1038,7 @@ color: #ffffff;
 .sub-iteam-unit {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 }
 .net-menu {
   display: flex;
