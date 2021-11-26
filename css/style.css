@@ -28,6 +28,19 @@ br {
 a {
   text-decoration: none;
 }
+.nav-container span {
+ font-family: Raleway, sans-serif; 
+}
+.container .btn {
+ font-family: Roboto, sans-serif;   
+}
+.basement a:first-child {
+  font-family: Raleway, sans-serif; 
+}
+
+a {
+  font-family: Roboto, sans-serif;
+}
 .page-for-logo{
 font-family: Raleway, sans-serif;
 }
