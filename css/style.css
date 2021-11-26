@@ -235,6 +235,10 @@ font-weight: 700;
 text-align: center;
 line-height: 1.17;
 font-style: normal;
+margin-block-start: 0em;
+margin-block-end: 0em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
 }
 .caption p {
   letter-spacing: 0.03em;
@@ -315,7 +319,7 @@ font-style: normal;
   margin-top: 30px;
 }
 .section .activity-list  {
-
+  width: 1200px;
   color: var(--primery-item-color);
 }
 .section .subtitle-1 {
@@ -325,6 +329,7 @@ font-style: normal;
   color: #212121;
 }
 .section .subtitle-2 {
+  width: 100%;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -462,8 +467,10 @@ background-color: var(--another-section-color);
 }
 .bussines-box {
  background-color: #F5F4FA;
- 
-  padding-bottom: 94px;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom: 94px;
 }
 .work-section {
   padding-bottom: 94px;
@@ -588,8 +595,17 @@ align-self: center;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
 }
-.icon-png svg:hover {
-fill: rgba(255, 255, 255, 1);
+.icon-png{ 
+  width: unset;
+}
+ .icons-links .icon-png {
+  max-width: 44px;
+  max-height: 44px;
+  display: flex;
+  justify-items: center;
+}
+.icons-links .icon-png:hover svg {
+  fill: rgba(255, 255, 255, 1);
 }
 .icon-png {
   display: inline-block;
@@ -617,7 +633,7 @@ margin-right: 10px;
 }
 .icon-3
 /* .Customers our studio*/
-.customers .figure svg:hover {
+.customers .figure svg {
 fill: rgba(255, 255, 255, 1);
 }
 
@@ -636,73 +652,74 @@ fill: rgba(255, 255, 255, 1);
    border: 3px solid rgba(33, 150, 243, 1);
    margin: -2px;
  }
+ .figure:hover svg {
+   fill: #2196f3;
+ }
 .customers{
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -60px;
-  margin-top: -20px;
 } 
 .icon-svg li {
   max-width: 170px;
   height: 92px;
 }
 .customers > li {
- flex-basis: calc((100%/6)-150px);
+ flex-basis: calc((100%-150px)/6);
   margin-left: 30px;
+}
+.customers > li:first-child {
+  margin-left: 0px;  
 }
 .customers-of-companies {
 padding-bottom: 94px;
 }
 .customers > li:last-child {
-  m
+  
 }
 .icon-svg {
   display: flex;
 }
-.figure svg:hover {
-  fill:  rgba(33, 150, 243, 1);
 
-}
 
 .company {
-  width: 41px;
-  height: 48px;
+  width: 106px;
+  height: 60px;
   fill: rgba(175, 177, 184, 1);
   vertical-align: middle;
  
   
 }
 .company-2 {
-  width: 40px;
-  height: 52px;
+  width: 106px;
+  height: 60px;
    fill: rgba(175, 177, 184, 1);
   vertical-align: middle;
  
 }
 .company-3 {
-  width: 44px;
-  height: 41px;
+  width: 106px;
+  height: 60px;
   fill: rgba(175, 177, 184, 1);
   vertical-align: middle;
   
 }
 .company-4 {
-  width: 85px;
-  height: 41px;
+  width: 106px;
+  height: 60px;
   vertical-align: middle;
    fill: rgba(175, 177, 184, 1);
   
 }
 .company-5 {
-  width: 63px;
-  height: 44px;
+  width: 106px;
+  height: 60px;
   vertical-align: middle;
   fill: rgba(175, 177, 184, 1);
 }
 .company-6 {
-  width: 94px;
-  height: 44px;
+  width: 106px;
+  height: 60px;
   vertical-align: middle;
    fill: rgba(175, 177, 184, 1);
 
@@ -766,9 +783,7 @@ color: #ffffff;
   fill: rgba(255, 255, 255, 1);
   
 }
-.bottom-list-icon .below-icons svg:hover {
-  fill: rgba(255, 255, 255, 1);
-}
+
 .bottom-list-icon {
   margin-top: 15px;
   margin-left: 70px;
@@ -813,9 +828,10 @@ text-transform: uppercase;
 
 
 .icons-links {
+  width: 100%;
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
+
 }
 /* HOVER FOR ICONS */
 .block-list {
@@ -832,12 +848,15 @@ text-transform: uppercase;
   display: block;
   width: 370px;
   height: 294px;
-  flex-basis: calc((100%-90px)/3);
- 
+  flex-basis: calc((100%/3)-60px);
+  margin-right: 30px;
+}
+.worker-list .picture:last-child {
+  margin-right: 0px;
 }
 .worker-list{
   display: flex;
-  margin-left: -30px;
+  
 }
 .subtitle-1 {
   text-align: center;
@@ -852,12 +871,10 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
   flex-wrap: no-wrap;
-  width: 1200px;
   padding-inline-start: 0px;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  margin-left: -40px;
-  margin-top: -20px;
+
   
 }
 .card {
@@ -868,10 +885,12 @@ width: 270px;
 
 }
 .spesialist > .list-employee {
-  flex-basis: calc(100%/4);
-  margin-left: 20px;
-  margin-top: 20px;
-  
+  max-width: 270px;
+  flex-basis: calc((100%-90px)/4);
+  margin-right: 30px;
+}
+.spesialist > .list-employee:nth-last-child(-n+1) {
+margin-right: 0px;
 }
 p {
     display: block;
