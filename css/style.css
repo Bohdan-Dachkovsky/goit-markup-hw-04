@@ -138,8 +138,7 @@ margin-right: 50px;
   animation-delay: 1000ms;
 }
 .list .list-tel:hover {
-color: #2196F3;
-  color: #080545;
+  color:rgba(33, 150, 243, 1);
   transition-property: background-color;
   transition-duration: 500ms ;
   transition-timing-function: linear;
@@ -154,16 +153,15 @@ color: #2196F3;
     padding-inline-start: 0px;
 
 }
-
+.icons-links .icon-png:hover svg
 .list .e-mail:hover {
-color: #2196F3;  
-  color: #080545;
+  color:rgba(33, 150, 243, 1);  
   transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: linear;
-  animation-delay: 1000ms;
-   
+  animation-delay: 1000ms;  
 }
+
 
 /* Дополнительная навигация */
 .e-mail {
@@ -516,11 +514,11 @@ margin-right: 10px;
 align-items: center;
 }
 /* ICON SVG HOVER*/
-.mail-token:hover {
-fill: #2196f3; 
+.mail-token {
+fill: rgba(117, 117, 117, 1); 
 }
-.phone-number:hover {
-fill: #2196f3;
+.phone-number {
+fill: rgba(117, 117, 117, 1);
 }
 /* Margin for header */
 .nav-container .page-for-logo {
@@ -542,6 +540,16 @@ fill: #2196f3;
  align-items: center;
  vertical-align: middle;
  margin-right: 30px;
+}
+.second-site-unit .e-mail:hover{
+color: var(--basic-bg-color);
+}
+
+.second-site-unit > .e-mail:hover + .second-site-unit > .mail-contact svg {
+fill: var(--basic-bg-color);
+}
+.e-mail:hover + #contact-mail {
+fill: var(--basic-bg-color);  
 }
 .second-site-unit > .contact-1 {
   align-items: center;
@@ -596,13 +604,14 @@ align-self: center;
   fill: rgba(175, 177, 184, 1);
 }
 .icon-png{ 
-  width: unset;
+  justify-content: center;
 }
- .icons-links .icon-png {
+ .icons-links li {
   max-width: 44px;
-  max-height: 44px;
-  display: flex;
-  justify-items: center;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+ 
 }
 .icons-links .icon-png:hover svg {
   fill: rgba(255, 255, 255, 1);
@@ -621,16 +630,7 @@ align-self: center;
   flex-wrap: nowrap;
  
 }
-.icon-1 {
-margin-left: 25px;
-}
-.icon-2 {
-margin-left: 10px;
-margin-right: 10px;
-}
-.icon-3 {
-margin-right: 10px;
-}
+
 .icon-3
 /* .Customers our studio*/
 .customers .figure svg {
@@ -827,11 +827,19 @@ text-transform: uppercase;
 }
 
 
-.icons-links {
-  width: 100%;
+.icons-links  {
   display: inline-flex;
   flex-direction: row;
-
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.icons-links li {
+  flex-basis: calc((100%-30px)/4);
+  margin-right: 10px;
+}
+.icons-links li:nth-last-of-type(-n+1) {
+  margin-right: 0px;
 }
 /* HOVER FOR ICONS */
 .block-list {
