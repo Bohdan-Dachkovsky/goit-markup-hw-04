@@ -501,6 +501,9 @@ background-color: var(--another-section-color);
   margin-left: auto;
   align-items: center;
 }
+.mail-info {
+  margin-right: 30px;
+}
 .nav-container  {
   display: flex;
   flex-direction: row;
@@ -527,12 +530,25 @@ margin-right: 10px;
 align-items: center;
 }
 /* ICON SVG HOVER*/
+
 .mail-token {
 fill: rgba(117, 117, 117, 1); 
 }
-.phone-number {
-fill: rgba(117, 117, 117, 1);
+.mail-contact:hover .mail-token {
+fill: rgba(33, 150, 243, 1);
 }
+.phone-number:hover {
+ color: rgba(33, 150, 243, 1); 
+}
+.phone-number {
+color: rgba(117, 117, 117, 1);
+}
+.phone-token {
+ fill: rgba(117, 117, 117, 1);  
+}
+.phone-number:hover .phone-token {
+fill: rgba(33, 150, 243, 1);
+} 
 /* Margin for header */
 .nav-container .page-for-logo {
   padding-right: 93px;
@@ -554,15 +570,12 @@ fill: rgba(117, 117, 117, 1);
  vertical-align: middle;
  margin-right: 30px;
 }
-.second-site-unit .e-mail:hover{
-color: var(--basic-bg-color);
-}
 
-.second-site-unit > .e-mail:hover + .second-site-unit > .mail-contact svg {
-fill: var(--basic-bg-color);
+ .mail-contact {
+color: rgba(117, 117, 117, 1); 
 }
-.e-mail:hover + #contact-mail {
-fill: var(--basic-bg-color);  
+.mail-contact:hover {
+color: rgba(33, 150, 243, 1);   
 }
 .second-site-unit > .contact-1 {
   align-items: center;
@@ -641,7 +654,7 @@ align-self: center;
   border-radius: 50%;
   margin-bottom: 30px;
   flex-wrap: nowrap;
- 
+  transition: fill 350ms linear 1s;
 }
 
 .icon-3
@@ -659,7 +672,10 @@ fill: rgba(255, 255, 255, 1);
   background-color: #F5F4FA;
   text-decoration: none;
   border: 1px solid #AFB1B8; 
+  transition: border-color 350ms linear 1s;
+  transition: color 350ms linear 1s;
 }
+
  .figure:hover {
    border-color: 1px solid rgba(33, 150, 243, 1);
    border: 3px solid rgba(33, 150, 243, 1);
